@@ -7,6 +7,79 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-size: 16px;
 }
 
-/* Add styles here! */
+h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+
+  --color-secondary-lighter: hsl(45deg, 100%, 50%);
+  --color-secondary-darker: hsl(45deg, 100%, 40%);
+
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-very-dark: hsl(0deg, 0%, 10%);
+  --color-dark: hsl(0deg, 0%, 30%);
+  --color-medium: hsl(0deg, 0%, 40%);
+  --color-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 30px;
+  margin: 16px 0;
+  color: var(--color-black);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  padding: 96px 24px 48px 24px;
+  width: 55%;
+  min-width: 350px
+}
+
+.intro-chunk .title {
+  padding-bottom: 24px;
+}
+
+.intro-chunk p {
+  padding-bottom: 8px;
+  
+}
+
+.intro-chunk p strong {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+main {
+  /* height: 100%;  I think it looks better with this*/
+  padding: 48px 0;
+  border-top: 8px solid var(--color-light);
+  background-color: var(--color-medium);
+}
+
+.card {
+  padding: 8px 24px 24px;
+  background-color: var(--color-white);
+  border-bottom: 8px solid var(--color-light);
+}
+
+.indented-heading {
+  margin-left: -32px;
+  background: var(--color-secondary-lighter);
+  border-bottom: 8px solid var(--color-secondary-darker);
+  width: fit-content;
+  padding: 16px 32px;
+}
